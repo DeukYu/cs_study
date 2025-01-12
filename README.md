@@ -22,3 +22,6 @@
 
 - ### Database
     - [SQL SELECT 순서](https://github.com/DeukYu/cs_study/blob/main/Database/SQL_SELECT_%EC%8B%A4%ED%96%89%EC%88%9C%EC%84%9C.md)
+
+- ### Etc
+    - [sleep 관련](https://github.com/DeukYu/cs_study/blob/main/Etc/Sleep(0)_vs_Sleep(1)_%EC%B0%A8%EC%9D%B4.md)
