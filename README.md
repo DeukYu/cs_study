@@ -9,6 +9,7 @@
 ### 개발자 전공 지식 &amp; 기술 면접 📖
 
 **Collaborator**
+- [DeukYu](https://github.com/DeukYu)
 
 **Commit convention rule** : 날짜-[주제]-내용-상태
 
@@ -18,3 +19,6 @@
 - ### Network
     - [네이글 알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/%EB%84%A4%EC%9D%B4%EA%B8%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
     - [MTU](https://github.com/DeukYu/cs_study/blob/main/Network/MTU.md)
+
+- ### Database
+    - [SQL SELECT 순서](https://github.com/DeukYu/cs_study/blob/main/Database/SQL_SELECT_%EC%8B%A4%ED%96%89%EC%88%9C%EC%84%9C.md)
