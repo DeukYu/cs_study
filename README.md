@@ -17,3 +17,4 @@
 
 - ### Network
     - [네이글 알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/%EB%84%A4%EC%9D%B4%EA%B8%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+    - [MTU](https://github.com/DeukYu/cs_study/blob/main/Network/MTU.md)
