@@ -6,7 +6,7 @@
 [![Star on GitHub](https://img.shields.io/github/stars/DeukYu/cs_study.svg?style=social)](https://github.com/gyoogle/tech-interview-for-developer/stargazers)
 [![Fork on GitHub](https://img.shields.io/github/forks/DeukYu/cs_study.svg?style=social)](https://github.com/gyoogle/tech-interview-for-developer/network/members)   
 
-### 개발자 전공 지식 &amp; 기술 면접
+### 개발자 전공 지식 &amp; 기술 면접 📖
 
 **Collaborator**
 
