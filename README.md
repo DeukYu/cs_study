@@ -9,7 +9,8 @@
 ### 개발자 전공 지식 &amp; 기술 면접 📖
 
 **Collaborator**
-- [DeukYu](https://github.com/DeukYu)
+- [이득유](https://github.com/DeukYu)
+- [이원형](https://github.com/Upian)
 
 **Commit convention rule** : 날짜-[주제]-내용-상태
 
