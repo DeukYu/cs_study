@@ -20,7 +20,7 @@
 - ### Network
     - [Blocking,Non-blocking,Synchronous,Asynchronous](https://github.com/DeukYu/cs_study/blob/main/Network/Blocking,Non-blocking,Synchronous,Asynchronous.md)
     - [MTU](https://github.com/DeukYu/cs_study/blob/main/Network/MTU.md)
-    - [네이글 알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/네이글 알고리즘.md)
+    - [네이글_알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/네이글_알고리즘.md)
 
 - ### Database
     - [SQL_SELECT_실행순서](https://github.com/DeukYu/cs_study/blob/main/Database/SQL_SELECT_실행순서.md)
