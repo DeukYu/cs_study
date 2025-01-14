@@ -1,4 +1,3 @@
-
 # cs_study
 [![Since](https://img.shields.io/badge/since-2025.01.12-333333.svg?style=flat-square)](https://gyoogle.github.io)
 [![author](https://img.shields.io/badge/author-DeukYu-0066FF.svg?style=flat-square)](https://gyoogle.github.io)
@@ -28,3 +27,8 @@
 - ### Etc
     - [Garbage_Collector](https://github.com/DeukYu/cs_study/blob/main/Etc/Garbage_Collector.md)
     - [Sleep(0)_vs_Sleep(1)_차이](https://github.com/DeukYu/cs_study/blob/main/Etc/Sleep(0)_vs_Sleep(1)_차이.md)
+
+## Language
+
+    - ### Language/C++
+        - [[C++] Smart_Pointer](https://github.com/DeukYu/cs_study/blob/main/Language/C++/[C++] Smart_Pointer.md)
