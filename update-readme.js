@@ -6,7 +6,7 @@ const basePath = './';
 const readmePath = path.join(basePath, 'README.md');
 
 // 재귀적으로 Markdown 파일 탐색
-function generateMarkdownLinks(folder, indent = '') {
+function generateMarkdownLinks(folder, indent = '', baseFolder = '') {
   const folderPath = path.join(basePath, folder);
   let markdownContent = '';
 
@@ -17,7 +17,8 @@ function generateMarkdownLinks(folder, indent = '') {
 
     // 현재 폴더 내 Markdown 파일 추가
     if (files.length > 0) {
-      markdownContent += `\n${indent}- ### ${folder}\n`;
+      const displayFolder = baseFolder || folder; // baseFolder가 있으면 사용
+      markdownContent += `\n${indent}- ### ${displayFolder}\n`;
       files.forEach(file => {
         const fileName = file.replace('.md', '');
         const link = `https://github.com/DeukYu/cs_study/blob/main/${folder}/${file}`;
@@ -27,7 +28,12 @@ function generateMarkdownLinks(folder, indent = '') {
 
     // 하위 폴더 탐색
     subfolders.forEach(subfolder => {
-      markdownContent += generateMarkdownLinks(path.join(folder, subfolder), indent + '    ');
+      const subfolderName = path.basename(subfolder); // 하위 폴더 이름
+      markdownContent += generateMarkdownLinks(
+        path.join(folder, subfolder), 
+        indent + '    ', 
+        subfolderName // 하위 폴더 이름만 전달
+      );
     });
   }
 
@@ -66,7 +72,7 @@ function updateReadme() {
 
   // Language 섹션 생성
   markdownContent += '\n## Language\n';
-  markdownContent += generateMarkdownLinks(languageFolder);
+  markdownContent += generateMarkdownLinks(languageFolder, '', 'Language');
 
   fs.writeFileSync(readmePath, markdownContent.trim());
   console.log('README.md updated successfully!');
