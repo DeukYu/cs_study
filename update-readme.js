@@ -5,9 +5,40 @@ const path = require('path');
 const basePath = './';
 const readmePath = path.join(basePath, 'README.md');
 
-// 폴더별로 Markdown 파일 탐색
-function generateMarkdownLinks() {
-  const folders = ['Network', 'Database', 'Etc']; // 폴더 리스트
+// 재귀적으로 Markdown 파일 탐색
+function generateMarkdownLinks(folder, indent = '') {
+  const folderPath = path.join(basePath, folder);
+  let markdownContent = '';
+
+  if (fs.existsSync(folderPath)) {
+    const items = fs.readdirSync(folderPath);
+    const subfolders = items.filter(item => fs.lstatSync(path.join(folderPath, item)).isDirectory());
+    const files = items.filter(item => item.endsWith('.md'));
+
+    // 현재 폴더 내 Markdown 파일 추가
+    if (files.length > 0) {
+      markdownContent += `\n${indent}- ### ${folder}\n`;
+      files.forEach(file => {
+        const fileName = file.replace('.md', '');
+        const link = `https://github.com/DeukYu/cs_study/blob/main/${folder}/${file}`;
+        markdownContent += `${indent}    - [${fileName}](${link})\n`;
+      });
+    }
+
+    // 하위 폴더 탐색
+    subfolders.forEach(subfolder => {
+      markdownContent += generateMarkdownLinks(path.join(folder, subfolder), indent + '    ');
+    });
+  }
+
+  return markdownContent;
+}
+
+// README 파일 업데이트
+function updateReadme() {
+  const csFolders = ['Network', 'Database', 'Etc']; // Computer Science 폴더 리스트
+  const languageFolder = 'Language'; // Language 폴더
+
   let markdownContent = `
 # cs_study
 [![Since](https://img.shields.io/badge/since-2025.01.12-333333.svg?style=flat-square)](https://gyoogle.github.io)
@@ -28,25 +59,17 @@ function generateMarkdownLinks() {
 ## Computer Science
 `;
 
-  folders.forEach(folder => {
-    const folderPath = path.join(basePath, folder);
-    if (fs.existsSync(folderPath)) {
-      const files = fs.readdirSync(folderPath).filter(file => file.endsWith('.md'));
-      if (files.length > 0) {
-        markdownContent += `\n- ### ${folder}\n`;
-        files.forEach(file => {
-          const fileName = file.replace('.md', '');
-          const link = `https://github.com/DeukYu/cs_study/blob/main/${folder}/${file}`;
-          markdownContent += `    - [${fileName}](${link})\n`;
-        });
-      }
-    }
+  // Computer Science 섹션 생성
+  csFolders.forEach(folder => {
+    markdownContent += generateMarkdownLinks(folder);
   });
 
-  return markdownContent;
+  // Language 섹션 생성
+  markdownContent += '\n## Language\n';
+  markdownContent += generateMarkdownLinks(languageFolder);
+
+  fs.writeFileSync(readmePath, markdownContent.trim());
+  console.log('README.md updated successfully!');
 }
 
-// README 파일 업데이트
-const updatedContent = generateMarkdownLinks();
-fs.writeFileSync(readmePath, updatedContent);
-console.log('README.md updated successfully!');
+updateReadme();
