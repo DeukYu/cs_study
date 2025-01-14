@@ -1,3 +1,56 @@
+const fs = require('fs');
+const path = require('path');
+
+// 저장소 경로 설정
+const basePath = './';
+const readmePath = path.join(basePath, 'README.md');
+
+// 재귀적으로 Markdown 파일 탐색
+function generateMarkdownLinks(folder, indent = '', isLanguage = false) {
+  const folderPath = path.join(basePath, folder);
+  let markdownContent = '';
+
+  if (fs.existsSync(folderPath)) {
+    const items = fs.readdirSync(folderPath);
+    const subfolders = items.filter(item => fs.lstatSync(path.join(folderPath, item)).isDirectory());
+    const files = items.filter(item => item.endsWith('.md'));
+
+    // 현재 폴더 내 Markdown 파일 추가
+    if (files.length > 0) {
+      if (!isLanguage) {
+        markdownContent += `\n${indent}- ### ${folder}\n`;
+      }
+      files.forEach(file => {
+        const fileName = file.replace('.md', '');
+        const encodedFileName = encodeURIComponent(file);
+        const link = `https://github.com/DeukYu/cs_study/blob/main/${folder}/${encodedFileName}`;
+        markdownContent += `${indent}    - [${fileName}](${link})\n`;
+      });
+    }
+
+    // 하위 폴더 탐색 (Language용 처리)
+    subfolders.forEach(subfolder => {
+      const subfolderName = path.basename(subfolder);
+      if (isLanguage) {
+        markdownContent += `\n### ${subfolderName}\n`;
+      }
+      markdownContent += generateMarkdownLinks(
+        path.join(folder, subfolder),
+        isLanguage ? '' : indent + '    ',
+        isLanguage
+      );
+    });
+  }
+
+  return markdownContent;
+}
+
+// README 파일 업데이트
+function updateReadme() {
+  const csFolders = ['Network', 'Database', 'Etc']; // Computer Science 폴더 리스트
+  const languageFolder = 'Language'; // Language 폴더
+
+  let markdownContent = `
 # cs_study
 [![Since](https://img.shields.io/badge/since-2025.01.12-333333.svg?style=flat-square)](https://gyoogle.github.io)
 [![author](https://img.shields.io/badge/author-DeukYu-0066FF.svg?style=flat-square)](https://gyoogle.github.io)
@@ -15,20 +68,19 @@
 **Commit convention rule** : 날짜-[주제]-내용-상태
 
 ## Computer Science
+`;
 
-- ### Network
-    - [Blocking,Non-blocking,Synchronous,Asynchronous](https://github.com/DeukYu/cs_study/blob/main/Network/Blocking,Non-blocking,Synchronous,Asynchronous.md)
-    - [MTU](https://github.com/DeukYu/cs_study/blob/main/Network/MTU.md)
-    - [네이글_알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/네이글_알고리즘.md)
+  // Computer Science 섹션 생성
+  csFolders.forEach(folder => {
+    markdownContent += generateMarkdownLinks(folder);
+  });
 
-- ### Database
-    - [SQL_SELECT_실행순서](https://github.com/DeukYu/cs_study/blob/main/Database/SQL_SELECT_실행순서.md)
+  // Language 섹션 생성
+  markdownContent += '\n## Language\n';
+  markdownContent += generateMarkdownLinks(languageFolder, '', true);
 
-- ### Etc
-    - [Garbage_Collector](https://github.com/DeukYu/cs_study/blob/main/Etc/Garbage_Collector.md)
-    - [Sleep(0)_vs_Sleep(1)_차이](https://github.com/DeukYu/cs_study/blob/main/Etc/Sleep(0)_vs_Sleep(1)_차이.md)
+  fs.writeFileSync(readmePath, markdownContent.trim());
+  console.log('README.md updated successfully!');
+}
 
-## Language
-
-    - ### Language/C++
-        - [[C++] Smart_Pointer](https://github.com/DeukYu/cs_study/blob/main/Language/C++/[C++] Smart_Pointer.md)
+updateReadme();
