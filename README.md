@@ -26,4 +26,5 @@
     - [SQL_SELECT_실행순서](https://github.com/DeukYu/cs_study/blob/main/Database/SQL_SELECT_실행순서.md)
 
 - ### Etc
+    - [Garbage Collector](https://github.com/DeukYu/cs_study/blob/main/Etc/Garbage Collector.md)
     - [Sleep(0)_vs_Sleep(1)_차이](https://github.com/DeukYu/cs_study/blob/main/Etc/Sleep(0)_vs_Sleep(1)_차이.md)
