@@ -31,7 +31,7 @@ function generateMarkdownLinks(folder, indent = '', baseFolder = '') {
       const subfolderName = path.basename(subfolder); // 하위 폴더 이름
       markdownContent += generateMarkdownLinks(
         path.join(folder, subfolder), 
-        indent + '    ', 
+        indent, 
         subfolderName // 하위 폴더 이름만 전달
       );
     });
