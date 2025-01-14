@@ -30,8 +30,9 @@
 
 ## Language
 
-    - ### C#
-        - [test](https://github.com/DeukYu/cs_study/blob/main/Language/C#/test.md)
+- ### C#
+    - [test](https://github.com/DeukYu/cs_study/blob/main/Language/C#/test.md)
+    - [test2](https://github.com/DeukYu/cs_study/blob/main/Language/C#/test2.md)
 
-    - ### C++
-        - [[C++] Smart_Pointer](https://github.com/DeukYu/cs_study/blob/main/Language/C++/[C++] Smart_Pointer.md)
+- ### C++
+    - [[C++] Smart_Pointer](https://github.com/DeukYu/cs_study/blob/main/Language/C++/[C++] Smart_Pointer.md)
