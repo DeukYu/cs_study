@@ -16,6 +16,9 @@
 
 ## Computer Science
 
+- ### Operating System
+    - [가상_메모리](https://github.com/DeukYu/cs_study/blob/main/Operating%20System/%EA%B0%80%EC%83%81_%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+
 - ### Network
     - [Blocking,Non-blocking,Synchronous,Asynchronous](https://github.com/DeukYu/cs_study/blob/main/Network/Blocking%2CNon-blocking%2CSynchronous%2CAsynchronous.md)
     - [MTU](https://github.com/DeukYu/cs_study/blob/main/Network/MTU.md)
