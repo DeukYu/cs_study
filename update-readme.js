@@ -21,7 +21,9 @@ function generateMarkdownLinks(folder, indent = '', baseFolder = '') {
       markdownContent += `\n${indent}- ### ${displayFolder}\n`;
       files.forEach(file => {
         const fileName = file.replace('.md', '');
-        const link = `https://github.com/DeukYu/cs_study/blob/main/${folder}/${file}`;
+        const encodedFolder = encodeURIComponent(folder).replace(/%2F/g, '/'); // 폴더 이름 인코딩
+        const encodedFile = encodeURIComponent(file); // 파일 이름 인코딩
+        const link = `https://github.com/DeukYu/cs_study/blob/main/${encodedFolder}/${encodedFile}`;
         markdownContent += `${indent}    - [${fileName}](${link})\n`;
       });
     }
