@@ -17,22 +17,18 @@
 ## Computer Science
 
 - ### Network
-    - [Blocking,Non-blocking,Synchronous,Asynchronous](https://github.com/DeukYu/cs_study/blob/main/Network/Blocking,Non-blocking,Synchronous,Asynchronous.md)
+    - [Blocking,Non-blocking,Synchronous,Asynchronous](https://github.com/DeukYu/cs_study/blob/main/Network/Blocking%2CNon-blocking%2CSynchronous%2CAsynchronous.md)
     - [MTU](https://github.com/DeukYu/cs_study/blob/main/Network/MTU.md)
-    - [네이글_알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/네이글_알고리즘.md)
+    - [네이글_알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/%EB%84%A4%EC%9D%B4%EA%B8%80_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
 
 - ### Database
-    - [SQL_SELECT_실행순서](https://github.com/DeukYu/cs_study/blob/main/Database/SQL_SELECT_실행순서.md)
+    - [SQL_SELECT_실행순서](https://github.com/DeukYu/cs_study/blob/main/Database/SQL_SELECT_%EC%8B%A4%ED%96%89%EC%88%9C%EC%84%9C.md)
 
 - ### Etc
     - [Garbage_Collector](https://github.com/DeukYu/cs_study/blob/main/Etc/Garbage_Collector.md)
-    - [Sleep(0)_vs_Sleep(1)_차이](https://github.com/DeukYu/cs_study/blob/main/Etc/Sleep(0)_vs_Sleep(1)_차이.md)
+    - [Sleep(0)_vs_Sleep(1)_차이](https://github.com/DeukYu/cs_study/blob/main/Etc/Sleep(0)_vs_Sleep(1)_%EC%B0%A8%EC%9D%B4.md)
 
 ## Language
 
-- ### C#
-    - [test](https://github.com/DeukYu/cs_study/blob/main/Language/C#/test.md)
-    - [test2](https://github.com/DeukYu/cs_study/blob/main/Language/C#/test2.md)
-
 - ### C++
-    - [[C++] Smart_Pointer](https://github.com/DeukYu/cs_study/blob/main/Language/C++/[C++] Smart_Pointer.md)
+    - [[C++] Smart_Pointer](https://github.com/DeukYu/cs_study/blob/main/Language/C%2B%2B/%5BC%2B%2B%5D%20Smart_Pointer.md)
