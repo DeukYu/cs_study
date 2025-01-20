@@ -22,6 +22,7 @@
 - ### Network
     - [Blocking,Non-blocking,Synchronous,Asynchronous](https://github.com/DeukYu/cs_study/blob/main/Network/Blocking%2CNon-blocking%2CSynchronous%2CAsynchronous.md)
     - [MTU](https://github.com/DeukYu/cs_study/blob/main/Network/MTU.md)
+    - [backlog](https://github.com/DeukYu/cs_study/blob/main/Network/backlog.md)
     - [네이글_알고리즘](https://github.com/DeukYu/cs_study/blob/main/Network/%EB%84%A4%EC%9D%B4%EA%B8%80_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
 
 - ### Database
