@@ -46,6 +46,7 @@ function generateMarkdownLinks(folder, indent = '', baseFolder = '') {
 function updateReadme() {
   const csFolders = ['Operating System','Network', 'Database', 'Etc']; // Computer Science 폴더 리스트
   const languageFolder = 'Language'; // Language 폴더
+  const interviewFolder = 'Interview'; // Interview 폴더
 
   let markdownContent = `
 # cs_study
@@ -75,6 +76,10 @@ function updateReadme() {
   // Language 섹션 생성
   markdownContent += '\n## Language\n';
   markdownContent += generateMarkdownLinks(languageFolder, '', 'Language');
+
+  // Interview 섹션 생성 (실제 면접 기출 질문)
+  markdownContent += '\n## Interview\n';
+  markdownContent += generateMarkdownLinks(interviewFolder, '', '기출 질문');
 
   fs.writeFileSync(readmePath, markdownContent.trim());
   console.log('README.md updated successfully!');

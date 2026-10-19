@@ -1,4 +1,6 @@
 ### [C++] smart pointer
+> 📌 기출: [NC Project NL Q2](../../Interview/NC_Project_NL_%EB%A9%B4%EC%A0%91_%EC%A7%88%EB%AC%B8.md) - shared_ptr Control Block
+
 - 메모리 관리를 자동화하여 **메모리 누수(memory leak)**와 같은 문제를 방지하는 도구
 - 객체의 소유권을 관리하고, 더이상 사용하지 않는 객체의 메모리를 자동으로 해체
 

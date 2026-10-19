@@ -1,4 +1,6 @@
 ### Sleep() 함수
+> 📌 기출: [NC Project NL Q3](../Interview/NC_Project_NL_%EB%A9%B4%EC%A0%91_%EC%A7%88%EB%AC%B8.md) - Context Switching 발생 시점
+
 - `Sleep()` 함수는 프로그램의 실행을 지정된 시간만큼 일시 중단(block)합니다.
 - 각 언어에서 `sleep()` 의 동작은 비슷하지만, 호출 방식이나 동작 세부사항은 약간 다를 수 있습니다.
 

@@ -36,3 +36,8 @@
 
 - ### C++
     - [[C++] Smart_Pointer](https://github.com/DeukYu/cs_study/blob/main/Language/C%2B%2B/%5BC%2B%2B%5D%20Smart_Pointer.md)
+
+## Interview
+
+- ### 기출 질문
+    - [NC_Project_NL_면접_질문](https://github.com/DeukYu/cs_study/blob/main/Interview/NC_Project_NL_%EB%A9%B4%EC%A0%91_%EC%A7%88%EB%AC%B8.md)
