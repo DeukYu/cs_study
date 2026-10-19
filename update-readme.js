@@ -44,7 +44,7 @@ function generateMarkdownLinks(folder, indent = '', baseFolder = '') {
 
 // README 파일 업데이트
 function updateReadme() {
-  const csFolders = ['Operating System','Network', 'Database', 'Etc']; // Computer Science 폴더 리스트
+  const csFolders = ['Operating System', 'Data Structure', 'Network', 'Database', 'Etc']; // Computer Science 폴더 리스트
   const languageFolder = 'Language'; // Language 폴더
   const interviewFolder = 'Interview'; // Interview 폴더
 

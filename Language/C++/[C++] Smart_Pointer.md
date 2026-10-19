@@ -174,3 +174,31 @@ int main() {
     B destroyed
     A destroyed
     ```
+
+## 면접 포인트: shared_ptr의 Control Block (NC Project NL Q2)
+> Q. shared_ptr의 Control Block이 무엇인가?
+
+- shared_ptr가 가리키는 객체와 **별도로 할당되는 관리 정보 블록**
+- shared_ptr 자체는 **객체 포인터 + Control Block 포인터**, 두 개를 들고 있습니다. (64비트 기준 16B)
+
+### Control Block 내용
+|항목|설명|
+|---|---|
+|strong count|`use_count()`. 0이 되면 객체 소멸|
+|weak count|0이 되면 Control Block 자체를 해제|
+|deleter|커스텀 삭제자|
+|allocator|커스텀 할당자|
+
+- 카운트는 **atomic** 으로 증감합니다.
+- strong count가 0이 되어도 weak count가 남아 있으면 Control Block은 살아 있습니다. 그래서 `weak_ptr::lock()`이 안전하게 만료 여부를 확인할 수 있습니다.
+
+### make_shared vs shared_ptr(new T)
+|항목|`make_shared`|`shared_ptr<T>(new T)`|
+|---|---|---|
+|할당 횟수|1회 (객체 + Control Block 한 덩어리)|2회|
+|캐시 지역성|좋음|나쁨|
+|객체 메모리 해제 시점|weak count까지 0이 될 때|strong count가 0이 될 때|
+
+### 주의점
+- **같은 raw 포인터로 shared_ptr를 두 번 만들면** Control Block이 두 개 생겨 이중 해제가 됩니다. `this`로 shared_ptr를 만들어야 하면 `enable_shared_from_this`를 씁니다.
+- **thread-safety**: 카운트 증감은 thread-safe하지만, 가리키는 객체 접근이나 **같은 shared_ptr 변수에 대한 동시 대입** 은 thread-safe하지 않습니다. (C++20 `std::atomic<std::shared_ptr<T>>`)

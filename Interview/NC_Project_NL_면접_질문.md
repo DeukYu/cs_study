@@ -14,29 +14,29 @@
 |질문 수|27개 (기술 18 · 실무 4 · 인성/마무리 5)|
 
 ## 질문 목록
-|No|분류|질문|관련 문서|
+|No|분류|질문|CS 정리 문서|
 |---|---|---|---|
-|Q1|C++ / 메모리|메모리 얼라인먼트란?||
+|Q1|C++ / 메모리|메모리 얼라인먼트란?|[메모리_얼라인먼트](../Operating%20System/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%96%BC%EB%9D%BC%EC%9D%B8%EB%A8%BC%ED%8A%B8.md)|
 |Q2|C++ / 메모리|shared_ptr의 Control Block이란?|[[C++] Smart_Pointer](../Language/C%2B%2B/%5BC%2B%2B%5D%20Smart_Pointer.md)|
-|Q3|OS|Context Switching은 언제 발생하는가?|[Sleep(0)_vs_Sleep(1)_차이](../Etc/Sleep(0)_vs_Sleep(1)_%EC%B0%A8%EC%9D%B4.md)|
+|Q3|OS|Context Switching은 언제 발생하는가?|[Context_Switching](../Operating%20System/Context_Switching.md)|
 |Q4|OS|Virtual Memory란?|[가상_메모리](../Operating%20System/%EA%B0%80%EC%83%81_%EB%A9%94%EB%AA%A8%EB%A6%AC.md)|
-|Q5|멀티스레드|atomic에 32개 스레드가 fetch_add하면?||
-|Q6|STL|vector의 메모리 관리||
-|Q7|STL|list의 메모리 관리||
-|Q8|STL|vector vs list 순회 속도||
-|Q9|STL|unordered_map의 내부 구조||
-|Q10|STL|map vs unordered_map||
-|Q11|STL|vector에 계속 insert하면?||
-|Q12|STL|list / unordered_map의 문제점||
-|Q13|멀티스레드|new/delete 반복 시 문제||
-|Q14|멀티스레드|할당 병목 해결 방법||
-|Q15|STL|unordered_map 검색 과정||
-|Q16|STL|vector의 메모리 적재 방식||
-|Q17|Database|SP에 여러 Row 넘기기 (TVP)||
-|Q18|C++ / 메모리|STL Allocator 교체 경험||
-|Q19|실무|거래소 매물 공유 구조||
-|Q20|실무|서버 간 DB 트랜잭션 처리||
-|Q21|실무|재화 차감 후 Crash 처리||
+|Q5|멀티스레드|atomic에 32개 스레드가 fetch_add하면?|[Atomic과_캐시_일관성](../Operating%20System/Atomic%EA%B3%BC_%EC%BA%90%EC%8B%9C_%EC%9D%BC%EA%B4%80%EC%84%B1.md)|
+|Q6|STL|vector의 메모리 관리|[vector](../Data%20Structure/vector.md)|
+|Q7|STL|list의 메모리 관리|[list](../Data%20Structure/list.md)|
+|Q8|STL|vector vs list 순회 속도|[vector_vs_list](../Data%20Structure/vector_vs_list.md)|
+|Q9|STL|unordered_map의 내부 구조|[unordered_map](../Data%20Structure/unordered_map.md)|
+|Q10|STL|map vs unordered_map|[map_vs_unordered_map](../Data%20Structure/map_vs_unordered_map.md)|
+|Q11|STL|vector에 계속 insert하면?|[vector](../Data%20Structure/vector.md)|
+|Q12|STL|list / unordered_map의 문제점|[list](../Data%20Structure/list.md), [unordered_map](../Data%20Structure/unordered_map.md)|
+|Q13|멀티스레드|new/delete 반복 시 문제|[멀티스레드_메모리_할당](../Operating%20System/%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C_%EB%A9%94%EB%AA%A8%EB%A6%AC_%ED%95%A0%EB%8B%B9.md)|
+|Q14|멀티스레드|할당 병목 해결 방법|[멀티스레드_메모리_할당](../Operating%20System/%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C_%EB%A9%94%EB%AA%A8%EB%A6%AC_%ED%95%A0%EB%8B%B9.md)|
+|Q15|STL|unordered_map 검색 과정|[unordered_map](../Data%20Structure/unordered_map.md)|
+|Q16|STL|vector의 메모리 적재 방식|[vector](../Data%20Structure/vector.md)|
+|Q17|Database|SP에 여러 Row 넘기기 (TVP)|[Table_Valued_Parameter](../Database/Table_Valued_Parameter.md)|
+|Q18|C++ / 메모리|STL Allocator 교체 경험|[[C++] STL_Allocator](../Language/C%2B%2B/%5BC%2B%2B%5D%20STL_Allocator.md)|
+|Q19|실무|거래소 매물 공유 구조|[분산_트랜잭션과_Saga](../Database/%EB%B6%84%EC%82%B0_%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC_Saga.md)|
+|Q20|실무|서버 간 DB 트랜잭션 처리|[분산_트랜잭션과_Saga](../Database/%EB%B6%84%EC%82%B0_%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC_Saga.md)|
+|Q21|실무|재화 차감 후 Crash 처리|[분산_트랜잭션과_Saga](../Database/%EB%B6%84%EC%82%B0_%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC_Saga.md)|
 |Q22|실무|가장 성취감이 컸던 작업||
 |Q23|AI 활용|AI 활용 경험||
 |Q24|인성|장점과 단점||
