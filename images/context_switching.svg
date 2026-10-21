@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="400" viewBox="0 0 780 400" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR','Noto Sans KR',sans-serif">
+<style>
+@keyframes play{0%{transform:translateX(0px)}83.33%{transform:translateX(620px)}100%{transform:translateX(620px)}}
+.play{animation:play 12s linear infinite}
+@keyframes m0{0.00%{opacity:1} 16.66%{opacity:1} 16.67%{opacity:0} 100.00%{opacity:0}}
+.m0{opacity:0;animation:m0 12s linear infinite}
+@keyframes m1{0.00%{opacity:0} 16.66%{opacity:0} 16.67%{opacity:1} 20.82%{opacity:1} 20.83%{opacity:0} 100.00%{opacity:0}}
+.m1{opacity:0;animation:m1 12s linear infinite}
+@keyframes m2{0.00%{opacity:0} 20.82%{opacity:0} 20.83%{opacity:1} 25.82%{opacity:1} 25.83%{opacity:0} 100.00%{opacity:0}}
+.m2{opacity:0;animation:m2 12s linear infinite}
+@keyframes m3{0.00%{opacity:0} 25.82%{opacity:0} 25.83%{opacity:1} 33.32%{opacity:1} 33.33%{opacity:0} 100.00%{opacity:0}}
+.m3{opacity:0;animation:m3 12s linear infinite}
+@keyframes m4{0.00%{opacity:0} 33.32%{opacity:0} 33.33%{opacity:1} 45.82%{opacity:1} 45.83%{opacity:0} 100.00%{opacity:0}}
+.m4{opacity:0;animation:m4 12s linear infinite}
+@keyframes m5{0.00%{opacity:0} 45.82%{opacity:0} 45.83%{opacity:1} 49.99%{opacity:1} 50.00%{opacity:0} 100.00%{opacity:0}}
+.m5{opacity:0;animation:m5 12s linear infinite}
+@keyframes m6{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 70.82%{opacity:1} 70.83%{opacity:0} 100.00%{opacity:0}}
+.m6{opacity:0;animation:m6 12s linear infinite}
+@keyframes m7{0.00%{opacity:0} 70.82%{opacity:0} 70.83%{opacity:1} 74.99%{opacity:1} 75.00%{opacity:0} 100.00%{opacity:0}}
+.m7{opacity:0;animation:m7 12s linear infinite}
+@keyframes m8{0.00%{opacity:0} 74.99%{opacity:0} 75.00%{opacity:1} 99.99%{opacity:1} 100.00%{opacity:0}}
+.m8{opacity:0;animation:m8 12s linear infinite}
+
+</style>
+<rect x="0" y="0" width="780" height="400" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="390.0" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#1f2328">코어 1개가 스레드 A, B를 번갈아 실행하는 모습</text>
+<text x="390.0" y="54" text-anchor="middle" font-size="13" fill="#59636e">회색 = Context Switch (상태 저장/복원) · 연한 색 = 전환 직후 캐시가 식어서 느린 구간</text>
+<text x="20" y="114" font-size="14" font-weight="700" fill="#1f2328">Core</text>
+<text x="20" y="130" font-size="11" fill="#59636e">(요리사)</text>
+<rect x="130.0" y="90" width="124.0" height="40" fill="#0969da"/>
+<text x="192.0" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">스레드 A</text>
+<rect x="254.0" y="90" width="31.0" height="40" fill="#8c959f"/>
+<text x="269.5" y="115" text-anchor="middle" font-size="11" fill="#fff">전환</text>
+<rect x="285.0" y="90" width="37.19999999999999" height="40" fill="#1a7f37" opacity="0.35"/>
+<rect x="322.2" y="90" width="148.8" height="40" fill="#1a7f37"/>
+<text x="378.0" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">스레드 B</text>
+<rect x="471.0" y="90" width="31.0" height="40" fill="#8c959f"/>
+<text x="486.5" y="115" text-anchor="middle" font-size="11" fill="#fff">전환</text>
+<rect x="502.0" y="90" width="37.200000000000045" height="40" fill="#0969da" opacity="0.35"/>
+<rect x="539.2" y="90" width="117.79999999999995" height="40" fill="#0969da"/>
+<text x="579.5" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">스레드 A</text>
+<rect x="657.0" y="90" width="31.0" height="40" fill="#8c959f"/>
+<text x="672.5" y="115" text-anchor="middle" font-size="11" fill="#fff">전환</text>
+<rect x="688.0" y="90" width="37.200000000000045" height="40" fill="#1a7f37" opacity="0.35"/>
+<rect x="725.2" y="90" width="24.799999999999955" height="40" fill="#1a7f37"/>
+<text x="719.0" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">스레드 B</text>
+<text x="20" y="181" font-size="13" font-weight="700" fill="#0969da">스레드 A</text>
+<rect x="130.0" y="160" width="124.0" height="30" fill="#0969da" stroke="#ffffff"/>
+<text x="192.0" y="180" text-anchor="middle" font-size="12" fill="#fff">실행</text>
+<rect x="254.0" y="160" width="124.0" height="30" fill="#ffebe9" stroke="#ffffff"/>
+<text x="316.0" y="180" text-anchor="middle" font-size="12" fill="#cf222e">대기</text>
+<rect x="378.0" y="160" width="124.0" height="30" fill="#fff8c5" stroke="#ffffff"/>
+<text x="440.0" y="180" text-anchor="middle" font-size="12" fill="#9a6700">준비</text>
+<rect x="502.0" y="160" width="155.0" height="30" fill="#0969da" stroke="#ffffff"/>
+<text x="579.5" y="180" text-anchor="middle" font-size="12" fill="#fff">실행</text>
+<rect x="657.0" y="160" width="93.0" height="30" fill="#ffebe9" stroke="#ffffff"/>
+<text x="703.5" y="180" text-anchor="middle" font-size="12" fill="#cf222e">대기</text>
+<text x="20" y="226" font-size="13" font-weight="700" fill="#1a7f37">스레드 B</text>
+<rect x="130.0" y="205" width="155.0" height="30" fill="#fff8c5" stroke="#ffffff"/>
+<text x="207.5" y="225" text-anchor="middle" font-size="12" fill="#9a6700">준비</text>
+<rect x="285.0" y="205" width="186.0" height="30" fill="#1a7f37" stroke="#ffffff"/>
+<text x="378.0" y="225" text-anchor="middle" font-size="12" fill="#fff">실행</text>
+<rect x="471.0" y="205" width="217.0" height="30" fill="#fff8c5" stroke="#ffffff"/>
+<text x="579.5" y="225" text-anchor="middle" font-size="12" fill="#9a6700">준비</text>
+<rect x="688.0" y="205" width="62.0" height="30" fill="#1a7f37" stroke="#ffffff"/>
+<text x="719.0" y="225" text-anchor="middle" font-size="12" fill="#fff">실행</text>
+<line x1="130.0" y1="240" x2="130.0" y2="246" stroke="#8c959f"/>
+<text x="130.0" y="260" text-anchor="middle" font-size="11" fill="#59636e">0</text>
+<line x1="254.0" y1="240" x2="254.0" y2="246" stroke="#8c959f"/>
+<text x="254.0" y="260" text-anchor="middle" font-size="11" fill="#59636e">2</text>
+<line x1="378.0" y1="240" x2="378.0" y2="246" stroke="#8c959f"/>
+<text x="378.0" y="260" text-anchor="middle" font-size="11" fill="#59636e">4</text>
+<line x1="502.0" y1="240" x2="502.0" y2="246" stroke="#8c959f"/>
+<text x="502.0" y="260" text-anchor="middle" font-size="11" fill="#59636e">6</text>
+<line x1="626.0" y1="240" x2="626.0" y2="246" stroke="#8c959f"/>
+<text x="626.0" y="260" text-anchor="middle" font-size="11" fill="#59636e">8</text>
+<line x1="750.0" y1="240" x2="750.0" y2="246" stroke="#8c959f"/>
+<text x="750.0" y="260" text-anchor="middle" font-size="11" fill="#59636e">10</text>
+<text x="750" y="274" text-anchor="end" font-size="11" fill="#59636e">시간 →</text>
+<line x1="254.0" y1="84" x2="254.0" y2="236" stroke="#cf222e" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="254.0" cy="80" r="4" fill="#cf222e"/>
+<line x1="378.0" y1="84" x2="378.0" y2="236" stroke="#9a6700" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="378.0" cy="80" r="4" fill="#9a6700"/>
+<line x1="471.0" y1="84" x2="471.0" y2="236" stroke="#8250df" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="471.0" cy="80" r="4" fill="#8250df"/>
+<line x1="657.0" y1="84" x2="657.0" y2="236" stroke="#cf222e" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="657.0" cy="80" r="4" fill="#cf222e"/>
+<g class="play"><line x1="130" y1="70" x2="130" y2="240" stroke="#f08c00" stroke-width="3"/><polygon points="123,64 137,64 130,74" fill="#f08c00"/></g>
+<rect x="20" y="296" width="740" height="54" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<text class="m0" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#0969da">스레드 A 실행 중: 게임 데이터를 저장하려고 DB에 쿼리를 보냄</text>
+<text class="m1" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#cf222e">자발적 전환: A가 DB 응답을 기다려야 해서 스스로 CPU를 내놓음 → A 상태 저장, B 상태 복원</text>
+<text class="m2" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#1a7f37">스레드 B 시작: 캐시가 식어 있어서 처음엔 느림 (캐시 오염)</text>
+<text class="m3" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#1a7f37">스레드 B 실행 중: 게임 로직 계산</text>
+<text class="m4" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#9a6700">DB 응답 도착(인터럽트) → A는 '준비' 상태가 되지만, 코어는 아직 B가 사용 중</text>
+<text class="m5" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#8250df">비자발적 전환: B의 타임 슬라이스가 끝나서 OS가 강제로 A로 교체</text>
+<text class="m6" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#0969da">스레드 A 실행 중: DB 응답 처리</text>
+<text class="m7" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#cf222e">자발적 전환: A가 다른 스레드가 쥔 락을 기다려야 해서 잠듦</text>
+<text class="m8" x="390.0" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#1a7f37">스레드 B 다시 실행</text>
+<rect x="40" y="368" width="14" height="14" fill="#0969da" stroke="#d0d7de"/>
+<text x="60" y="380" font-size="12" fill="#59636e">실행</text>
+<rect x="170" y="368" width="14" height="14" fill="#fff8c5" stroke="#d0d7de"/>
+<text x="190" y="380" font-size="12" fill="#59636e">준비 (Ready)</text>
+<rect x="300" y="368" width="14" height="14" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="320" y="380" font-size="12" fill="#59636e">대기 (Waiting)</text>
+<rect x="430" y="368" width="14" height="14" fill="#8c959f" stroke="#d0d7de"/>
+<text x="450" y="380" font-size="12" fill="#59636e">전환</text>
+</svg>

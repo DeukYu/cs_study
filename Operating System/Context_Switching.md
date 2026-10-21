@@ -43,6 +43,21 @@
 ---
 
 ## 3. 언제 발생하나
+### 스레드 상태로 보기
+- 스레드는 아래 3가지 상태를 오갑니다. **Running에서 빠져나가는 화살표가 곧 Context Switching** 입니다.
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    Ready: 준비 (Ready)<br/>실행 가능, 차례 기다림
+    Running: 실행 (Running)<br/>코어 위에서 실행 중
+    Waiting: 대기 (Waiting)<br/>I/O, 락, 이벤트 기다림
+    Ready --> Running: 스케줄러가 선택
+    Running --> Ready: 비자발적<br/>타임 슬라이스 끝, 선점
+    Running --> Waiting: 자발적<br/>I/O, 락, Sleep
+    Waiting --> Ready: 기다리던 일 완료<br/>(인터럽트, 락 해제)
+```
+
 
 ### 1) 자발적 전환 (Voluntary): 스레드가 스스로 CPU를 내놓음
 |상황|비유|예시|
@@ -60,6 +75,9 @@
 |인터럽트 처리 후|전화 받고 돌아왔더니 매니저가 다른 요리를 먼저 하라고 함|네트워크 패킷 도착, 타이머 인터럽트 후 스케줄러 재호출|
 
 ### 예시로 따라가기
+![Context Switching 타임라인 애니메이션](../images/context_switching.svg)
+- 주황색 세로선이 시간을 따라 움직이며, 아래 상자에 지금 무슨 일이 일어나는지 설명이 바뀝니다.
+
 > 코어 1개, 스레드 A(DB 저장), B(게임 로직)
 
 |순서|일어난 일|전환 종류|

@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR','Noto Sans KR',sans-serif">
+<style>
+@keyframes p0_0{0.00%{opacity:1} 12.49%{opacity:1} 12.50%{opacity:0} 100.00%{opacity:0}}
+.p0_0{opacity:0;animation:p0_0 4s linear infinite}
+@keyframes p0_1{0.00%{opacity:0} 12.49%{opacity:0} 12.50%{opacity:1} 24.99%{opacity:1} 25.00%{opacity:0} 100.00%{opacity:0}}
+.p0_1{opacity:0;animation:p0_1 4s linear infinite}
+@keyframes p0_2{0.00%{opacity:0} 24.99%{opacity:0} 25.00%{opacity:1} 37.49%{opacity:1} 37.50%{opacity:0} 100.00%{opacity:0}}
+.p0_2{opacity:0;animation:p0_2 4s linear infinite}
+@keyframes p0_3{0.00%{opacity:0} 37.49%{opacity:0} 37.50%{opacity:1} 49.99%{opacity:1} 50.00%{opacity:0} 100.00%{opacity:0}}
+.p0_3{opacity:0;animation:p0_3 4s linear infinite}
+@keyframes p0_4{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 62.49%{opacity:1} 62.50%{opacity:0} 100.00%{opacity:0}}
+.p0_4{opacity:0;animation:p0_4 4s linear infinite}
+@keyframes p0_5{0.00%{opacity:0} 62.49%{opacity:0} 62.50%{opacity:1} 74.99%{opacity:1} 75.00%{opacity:0} 100.00%{opacity:0}}
+.p0_5{opacity:0;animation:p0_5 4s linear infinite}
+@keyframes p0_6{0.00%{opacity:0} 74.99%{opacity:0} 75.00%{opacity:1} 87.49%{opacity:1} 87.50%{opacity:0} 100.00%{opacity:0}}
+.p0_6{opacity:0;animation:p0_6 4s linear infinite}
+@keyframes p0_7{0.00%{opacity:0} 87.49%{opacity:0} 87.50%{opacity:1} 99.99%{opacity:1} 100.00%{opacity:0}}
+.p0_7{opacity:0;animation:p0_7 4s linear infinite}
+@keyframes p1_0{0.00%{opacity:1} 12.49%{opacity:1} 12.50%{opacity:0} 100.00%{opacity:0}}
+.p1_0{opacity:0;animation:p1_0 4s linear infinite}
+@keyframes p1_1{0.00%{opacity:0} 12.49%{opacity:0} 12.50%{opacity:1} 24.99%{opacity:1} 25.00%{opacity:0} 100.00%{opacity:0}}
+.p1_1{opacity:0;animation:p1_1 4s linear infinite}
+@keyframes p1_2{0.00%{opacity:0} 24.99%{opacity:0} 25.00%{opacity:1} 37.49%{opacity:1} 37.50%{opacity:0} 100.00%{opacity:0}}
+.p1_2{opacity:0;animation:p1_2 4s linear infinite}
+@keyframes p1_3{0.00%{opacity:0} 37.49%{opacity:0} 37.50%{opacity:1} 49.99%{opacity:1} 50.00%{opacity:0} 100.00%{opacity:0}}
+.p1_3{opacity:0;animation:p1_3 4s linear infinite}
+@keyframes p1_4{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 62.49%{opacity:1} 62.50%{opacity:0} 100.00%{opacity:0}}
+.p1_4{opacity:0;animation:p1_4 4s linear infinite}
+@keyframes p1_5{0.00%{opacity:0} 62.49%{opacity:0} 62.50%{opacity:1} 74.99%{opacity:1} 75.00%{opacity:0} 100.00%{opacity:0}}
+.p1_5{opacity:0;animation:p1_5 4s linear infinite}
+@keyframes p1_6{0.00%{opacity:0} 74.99%{opacity:0} 75.00%{opacity:1} 87.49%{opacity:1} 87.50%{opacity:0} 100.00%{opacity:0}}
+.p1_6{opacity:0;animation:p1_6 4s linear infinite}
+@keyframes p1_7{0.00%{opacity:0} 87.49%{opacity:0} 87.50%{opacity:1} 99.99%{opacity:1} 100.00%{opacity:0}}
+.p1_7{opacity:0;animation:p1_7 4s linear infinite}
+@keyframes p2_0{0.00%{opacity:1} 12.49%{opacity:1} 12.50%{opacity:0} 100.00%{opacity:0}}
+.p2_0{opacity:0;animation:p2_0 4s linear infinite}
+@keyframes p2_1{0.00%{opacity:0} 12.49%{opacity:0} 12.50%{opacity:1} 24.99%{opacity:1} 25.00%{opacity:0} 100.00%{opacity:0}}
+.p2_1{opacity:0;animation:p2_1 4s linear infinite}
+@keyframes p2_2{0.00%{opacity:0} 24.99%{opacity:0} 25.00%{opacity:1} 37.49%{opacity:1} 37.50%{opacity:0} 100.00%{opacity:0}}
+.p2_2{opacity:0;animation:p2_2 4s linear infinite}
+@keyframes p2_3{0.00%{opacity:0} 37.49%{opacity:0} 37.50%{opacity:1} 49.99%{opacity:1} 50.00%{opacity:0} 100.00%{opacity:0}}
+.p2_3{opacity:0;animation:p2_3 4s linear infinite}
+@keyframes p2_4{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 62.49%{opacity:1} 62.50%{opacity:0} 100.00%{opacity:0}}
+.p2_4{opacity:0;animation:p2_4 4s linear infinite}
+@keyframes p2_5{0.00%{opacity:0} 62.49%{opacity:0} 62.50%{opacity:1} 74.99%{opacity:1} 75.00%{opacity:0} 100.00%{opacity:0}}
+.p2_5{opacity:0;animation:p2_5 4s linear infinite}
+@keyframes p2_6{0.00%{opacity:0} 74.99%{opacity:0} 75.00%{opacity:1} 87.49%{opacity:1} 87.50%{opacity:0} 100.00%{opacity:0}}
+.p2_6{opacity:0;animation:p2_6 4s linear infinite}
+@keyframes p2_7{0.00%{opacity:0} 87.49%{opacity:0} 87.50%{opacity:1} 99.99%{opacity:1} 100.00%{opacity:0}}
+.p2_7{opacity:0;animation:p2_7 4s linear infinite}
+@keyframes p3_0{0.00%{opacity:1} 12.49%{opacity:1} 12.50%{opacity:0} 100.00%{opacity:0}}
+.p3_0{opacity:0;animation:p3_0 4s linear infinite}
+@keyframes p3_1{0.00%{opacity:0} 12.49%{opacity:0} 12.50%{opacity:1} 24.99%{opacity:1} 25.00%{opacity:0} 100.00%{opacity:0}}
+.p3_1{opacity:0;animation:p3_1 4s linear infinite}
+@keyframes p3_2{0.00%{opacity:0} 24.99%{opacity:0} 25.00%{opacity:1} 37.49%{opacity:1} 37.50%{opacity:0} 100.00%{opacity:0}}
+.p3_2{opacity:0;animation:p3_2 4s linear infinite}
+@keyframes p3_3{0.00%{opacity:0} 37.49%{opacity:0} 37.50%{opacity:1} 49.99%{opacity:1} 50.00%{opacity:0} 100.00%{opacity:0}}
+.p3_3{opacity:0;animation:p3_3 4s linear infinite}
+@keyframes p3_4{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 62.49%{opacity:1} 62.50%{opacity:0} 100.00%{opacity:0}}
+.p3_4{opacity:0;animation:p3_4 4s linear infinite}
+@keyframes p3_5{0.00%{opacity:0} 62.49%{opacity:0} 62.50%{opacity:1} 74.99%{opacity:1} 75.00%{opacity:0} 100.00%{opacity:0}}
+.p3_5{opacity:0;animation:p3_5 4s linear infinite}
+@keyframes p3_6{0.00%{opacity:0} 74.99%{opacity:0} 75.00%{opacity:1} 87.49%{opacity:1} 87.50%{opacity:0} 100.00%{opacity:0}}
+.p3_6{opacity:0;animation:p3_6 4s linear infinite}
+@keyframes p3_7{0.00%{opacity:0} 87.49%{opacity:0} 87.50%{opacity:1} 99.99%{opacity:1} 100.00%{opacity:0}}
+.p3_7{opacity:0;animation:p3_7 4s linear infinite}
+@keyframes t0{0.00%{opacity:1} 12.49%{opacity:1} 12.50%{opacity:0} 100.00%{opacity:0}}
+.t0{opacity:0;animation:t0 4s linear infinite}
+@keyframes t1{0.00%{opacity:0} 12.49%{opacity:0} 12.50%{opacity:1} 24.99%{opacity:1} 25.00%{opacity:0} 100.00%{opacity:0}}
+.t1{opacity:0;animation:t1 4s linear infinite}
+@keyframes t2{0.00%{opacity:0} 24.99%{opacity:0} 25.00%{opacity:1} 37.49%{opacity:1} 37.50%{opacity:0} 100.00%{opacity:0}}
+.t2{opacity:0;animation:t2 4s linear infinite}
+@keyframes t3{0.00%{opacity:0} 37.49%{opacity:0} 37.50%{opacity:1} 49.99%{opacity:1} 50.00%{opacity:0} 100.00%{opacity:0}}
+.t3{opacity:0;animation:t3 4s linear infinite}
+@keyframes t4{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 62.49%{opacity:1} 62.50%{opacity:0} 100.00%{opacity:0}}
+.t4{opacity:0;animation:t4 4s linear infinite}
+@keyframes t5{0.00%{opacity:0} 62.49%{opacity:0} 62.50%{opacity:1} 74.99%{opacity:1} 75.00%{opacity:0} 100.00%{opacity:0}}
+.t5{opacity:0;animation:t5 4s linear infinite}
+@keyframes t6{0.00%{opacity:0} 74.99%{opacity:0} 75.00%{opacity:1} 87.49%{opacity:1} 87.50%{opacity:0} 100.00%{opacity:0}}
+.t6{opacity:0;animation:t6 4s linear infinite}
+@keyframes t7{0.00%{opacity:0} 87.49%{opacity:0} 87.50%{opacity:1} 99.99%{opacity:1} 100.00%{opacity:0}}
+.t7{opacity:0;animation:t7 4s linear infinite}
+
+</style>
+<rect x="0" y="0" width="760" height="320" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="380.0" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1f2328">해결책: 스레드별 카운터 (alignas(64)로 캐시라인 분리)</text>
+<text x="380.0" y="56" text-anchor="middle" font-size="13" fill="#59636e">각자 자기 캐시라인만 쓰니 이동이 없고, 4개 코어가 진짜로 동시에 진행합니다</text>
+<rect x="40" y="80" width="160" height="110" rx="10" fill="#f0fff4" stroke="#1a7f37" stroke-width="2"/>
+<text x="52" y="102" font-size="14" font-weight="700" fill="#1f2328">Core 0</text>
+<text x="188" y="102" text-anchor="end" font-size="12" fill="#59636e">M 유지</text>
+<rect x="60" y="120" width="120" height="28" rx="6" fill="#1a7f37"/>
+<text x="120" y="139" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">local[0]</text>
+<text class="p0_0" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 1</text>
+<text class="p0_1" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 2</text>
+<text class="p0_2" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 3</text>
+<text class="p0_3" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 4</text>
+<text class="p0_4" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 5</text>
+<text class="p0_5" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 6</text>
+<text class="p0_6" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 7</text>
+<text class="p0_7" x="120" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 8</text>
+<rect x="220" y="80" width="160" height="110" rx="10" fill="#f0fff4" stroke="#1a7f37" stroke-width="2"/>
+<text x="232" y="102" font-size="14" font-weight="700" fill="#1f2328">Core 1</text>
+<text x="368" y="102" text-anchor="end" font-size="12" fill="#59636e">M 유지</text>
+<rect x="240" y="120" width="120" height="28" rx="6" fill="#1a7f37"/>
+<text x="300" y="139" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">local[1]</text>
+<text class="p1_0" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 1</text>
+<text class="p1_1" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 2</text>
+<text class="p1_2" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 3</text>
+<text class="p1_3" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 4</text>
+<text class="p1_4" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 5</text>
+<text class="p1_5" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 6</text>
+<text class="p1_6" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 7</text>
+<text class="p1_7" x="300" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 8</text>
+<rect x="400" y="80" width="160" height="110" rx="10" fill="#f0fff4" stroke="#1a7f37" stroke-width="2"/>
+<text x="412" y="102" font-size="14" font-weight="700" fill="#1f2328">Core 2</text>
+<text x="548" y="102" text-anchor="end" font-size="12" fill="#59636e">M 유지</text>
+<rect x="420" y="120" width="120" height="28" rx="6" fill="#1a7f37"/>
+<text x="480" y="139" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">local[2]</text>
+<text class="p2_0" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 1</text>
+<text class="p2_1" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 2</text>
+<text class="p2_2" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 3</text>
+<text class="p2_3" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 4</text>
+<text class="p2_4" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 5</text>
+<text class="p2_5" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 6</text>
+<text class="p2_6" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 7</text>
+<text class="p2_7" x="480" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 8</text>
+<rect x="580" y="80" width="160" height="110" rx="10" fill="#f0fff4" stroke="#1a7f37" stroke-width="2"/>
+<text x="592" y="102" font-size="14" font-weight="700" fill="#1f2328">Core 3</text>
+<text x="728" y="102" text-anchor="end" font-size="12" fill="#59636e">M 유지</text>
+<rect x="600" y="120" width="120" height="28" rx="6" fill="#1a7f37"/>
+<text x="660" y="139" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">local[3]</text>
+<text class="p3_0" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 1</text>
+<text class="p3_1" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 2</text>
+<text class="p3_2" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 3</text>
+<text class="p3_3" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 4</text>
+<text class="p3_4" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 5</text>
+<text class="p3_5" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 6</text>
+<text class="p3_6" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 7</text>
+<text class="p3_7" x="660" y="175" text-anchor="middle" font-size="15" fill="#1f2328">값 = 8</text>
+<rect x="230" y="215" width="300" height="60" rx="10" fill="#ffffff" stroke="#8c959f" stroke-dasharray="5 4"/>
+<text x="380" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2328">Total() = local[0] + … + local[3]</text>
+<text class="t0" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 4</text>
+<text class="t1" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 8</text>
+<text class="t2" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 12</text>
+<text class="t3" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 16</text>
+<text class="t4" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 20</text>
+<text class="t5" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 24</text>
+<text class="t6" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 28</text>
+<text class="t7" x="380" y="262" text-anchor="middle" font-size="13" fill="#59636e">필요할 때만 합산 → 32</text>
+<line x1="120" y1="192" x2="380" y2="214" stroke="#c4c9cf" stroke-width="1.5"/>
+<line x1="300" y1="192" x2="380" y2="214" stroke="#c4c9cf" stroke-width="1.5"/>
+<line x1="480" y1="192" x2="380" y2="214" stroke="#c4c9cf" stroke-width="1.5"/>
+<line x1="660" y1="192" x2="380" y2="214" stroke="#c4c9cf" stroke-width="1.5"/>
+<text x="380.0" y="302" text-anchor="middle" font-size="12" fill="#59636e">핑퐁 그림에서 4번 증가하는 동안, 여기서는 각 코어가 8번씩, 합계 32번 증가합니다 (속도는 개념 비교용)</text>
+</svg>
