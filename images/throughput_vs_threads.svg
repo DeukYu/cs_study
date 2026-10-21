@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR','Noto Sans KR',sans-serif">
+<style>
+
+</style>
+<rect x="0" y="0" width="760" height="380" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="380.0" y="34" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">스레드 수에 따른 전체 처리량 (개념도)</text>
+<text x="380.0" y="56" font-size="13" fill="#59636e" text-anchor="middle" font-weight="400">실제 수치는 CPU마다 다르지만, 모양은 거의 항상 이렇게 나옵니다</text>
+<text x="200.0" y="82" font-size="14" fill="#cf222e" text-anchor="middle" font-weight="700">공유 atomic 하나에 fetch_add</text>
+<line x1="40" y1="315" x2="360" y2="315" stroke="#8c959f"/>
+<rect x="48.0" y="115.0" width="37.3" height="200.0" rx="3" fill="#cf222e"/>
+<text x="66.66666666666667" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">1</text>
+<text x="66.66666666666667" y="109.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">1배</text>
+<rect x="101.3" y="235.0" width="37.3" height="80.0" rx="3" fill="#cf222e"/>
+<text x="120.00000000000001" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">2</text>
+<text x="120.00000000000001" y="229.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">0.4배</text>
+<rect x="154.7" y="247.0" width="37.3" height="68.0" rx="3" fill="#cf222e"/>
+<text x="173.33333333333334" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">4</text>
+<text x="173.33333333333334" y="241.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">0.34배</text>
+<rect x="208.0" y="255.0" width="37.3" height="60.0" rx="3" fill="#cf222e"/>
+<text x="226.66666666666666" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">8</text>
+<text x="226.66666666666666" y="249.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">0.3배</text>
+<rect x="261.3" y="261.0" width="37.3" height="54.0" rx="3" fill="#cf222e"/>
+<text x="280.00000000000006" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">16</text>
+<text x="280.00000000000006" y="255.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">0.27배</text>
+<rect x="314.7" y="267.0" width="37.3" height="48.0" rx="3" fill="#cf222e"/>
+<text x="333.33333333333337" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">32</text>
+<text x="333.33333333333337" y="261.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">0.24배</text>
+<text x="200.0" y="349" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">스레드 수</text>
+<text x="200.0" y="369" font-size="12" fill="#1f2328" text-anchor="middle" font-weight="700">늘릴수록 오히려 감소</text>
+<text x="560.0" y="82" font-size="14" fill="#1a7f37" text-anchor="middle" font-weight="700">스레드별 카운터 (alignas(64))</text>
+<line x1="400" y1="315" x2="720" y2="315" stroke="#8c959f"/>
+<rect x="408.0" y="281.7" width="37.3" height="33.3" rx="3" fill="#1a7f37"/>
+<text x="426.6666666666667" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">1</text>
+<text x="426.6666666666667" y="275.6666666666667" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">1배</text>
+<rect x="461.3" y="248.3" width="37.3" height="66.7" rx="3" fill="#1a7f37"/>
+<text x="480.0" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">2</text>
+<text x="480.0" y="242.33333333333334" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">2배</text>
+<rect x="514.7" y="215.0" width="37.3" height="100.0" rx="3" fill="#1a7f37"/>
+<text x="533.3333333333334" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">4</text>
+<text x="533.3333333333334" y="209.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">4배</text>
+<rect x="568.0" y="181.7" width="37.3" height="133.3" rx="3" fill="#1a7f37"/>
+<text x="586.6666666666666" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">8</text>
+<text x="586.6666666666666" y="175.66666666666669" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">8배</text>
+<rect x="621.3" y="148.3" width="37.3" height="166.7" rx="3" fill="#1a7f37"/>
+<text x="640.0" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">16</text>
+<text x="640.0" y="142.33333333333331" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">16배</text>
+<rect x="674.7" y="115.0" width="37.3" height="200.0" rx="3" fill="#1a7f37"/>
+<text x="693.3333333333334" y="331" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">32</text>
+<text x="693.3333333333334" y="109.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">32배</text>
+<text x="560.0" y="349" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">스레드 수</text>
+<text x="560.0" y="369" font-size="12" fill="#1f2328" text-anchor="middle" font-weight="700">코어 수만큼 증가 (높이는 로그 눈금)</text>
+</svg>

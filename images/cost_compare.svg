@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR','Noto Sans KR',sans-serif">
+<style>
+
+</style>
+<rect x="0" y="0" width="760" height="330" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="380.0" y="34" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">+1 한 번에 드는 비용 비교 (32스레드 경합 시, 대략)</text>
+<text x="380.0" y="56" font-size="13" fill="#59636e" text-anchor="middle" font-weight="400">로그 눈금: 오른쪽으로 한 칸 갈 때마다 10배</text>
+<line x1="230.0" y1="75" x2="230.0" y2="275" stroke="#eaeef2"/>
+<text x="230.0" y="292" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">1ns</text>
+<line x1="347.5" y1="75" x2="347.5" y2="275" stroke="#eaeef2"/>
+<text x="347.5" y="292" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">10ns</text>
+<line x1="465.0" y1="75" x2="465.0" y2="275" stroke="#eaeef2"/>
+<text x="465.0" y="292" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">100ns</text>
+<line x1="582.5" y1="75" x2="582.5" y2="275" stroke="#eaeef2"/>
+<text x="582.5" y="292" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">1μs</text>
+<line x1="700.0" y1="75" x2="700.0" y2="275" stroke="#eaeef2"/>
+<text x="700.0" y="292" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">10μs</text>
+<text x="40" y="100" font-size="13" fill="#1f2328" text-anchor="start" font-weight="700">스레드별 카운터</text>
+<text x="40" y="117" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">경합 없음</text>
+<rect x="230" y="85" width="56.1" height="30" rx="4" fill="#1a7f37"/>
+<text x="294.06174742956034" y="105" font-size="12" fill="#1a7f37" text-anchor="start" font-weight="700">수 ns</text>
+<text x="40" y="148" font-size="13" fill="#1f2328" text-anchor="start" font-weight="700">atomic fetch_add</text>
+<text x="40" y="165" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">캐시라인 핑퐁</text>
+<rect x="230" y="133" width="208.9" height="30" rx="4" fill="#f08c00"/>
+<text x="446.93277192007815" y="153" font-size="12" fill="#f08c00" text-anchor="start" font-weight="700">수십~수백 ns</text>
+<text x="40" y="196" font-size="13" fill="#1f2328" text-anchor="start" font-weight="700">SpinLock + ++</text>
+<text x="40" y="213" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">락 변수 핑퐁 + 헛돎</text>
+<rect x="230" y="181" width="270.4" height="30" rx="4" fill="#8250df"/>
+<text x="508.3710244905178" y="201" font-size="12" fill="#8250df" text-anchor="start" font-weight="700">수백 ns 이상</text>
+<text x="40" y="244" font-size="13" fill="#1f2328" text-anchor="start" font-weight="700">std::mutex + ++</text>
+<text x="40" y="261" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">잠들고 깨기 (Context Switch)</text>
+<rect x="230" y="229" width="408.6" height="30" rx="4" fill="#cf222e"/>
+<text x="646.5617474295603" y="249" font-size="12" fill="#cf222e" text-anchor="start" font-weight="700">수 μs</text>
+<text x="380.0" y="318" font-size="12" fill="#59636e" text-anchor="middle" font-weight="400">mutex는 atomic보다 자릿수가 두세 개 더 큽니다. 숫자는 CPU/OS마다 다른 대략적인 크기입니다</text>
+</svg>

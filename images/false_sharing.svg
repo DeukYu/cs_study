@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR','Noto Sans KR',sans-serif">
+<style>
+@keyframes fo0{0.00%{opacity:1} 19.99%{opacity:1} 20.00%{opacity:0} 100.00%{opacity:0}}
+.fo0{opacity:0;animation:fo0 6s linear infinite}
+@keyframes fo1{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 69.99%{opacity:1} 70.00%{opacity:0} 100.00%{opacity:0}}
+.fo1{opacity:0;animation:fo1 6s linear infinite}
+@keyframes fs{0%{transform:translate(0px,0px)}20%{transform:translate(0px,0px)}50%{transform:translate(460px,0px)}70%{transform:translate(460px,0px)}100%{transform:translate(0px,0px)}}
+.fs{animation:fs 6s ease-in-out infinite}
+@keyframes fmv{0.00%{opacity:0} 19.99%{opacity:0} 20.00%{opacity:1} 49.99%{opacity:1} 50.00%{opacity:0} 69.99%{opacity:0} 70.00%{opacity:1} 99.99%{opacity:1} 100.00%{opacity:0}}
+.fmv{opacity:0;animation:fmv 6s linear infinite}
+@keyframes fw0{0.00%{opacity:1} 19.99%{opacity:1} 20.00%{opacity:0} 100.00%{opacity:0}}
+.fw0{opacity:0;animation:fw0 6s linear infinite}
+@keyframes fw1{0.00%{opacity:0} 49.99%{opacity:0} 50.00%{opacity:1} 69.99%{opacity:1} 70.00%{opacity:0} 100.00%{opacity:0}}
+.fw1{opacity:0;animation:fw1 6s linear infinite}
+
+</style>
+<rect x="0" y="0" width="760" height="430" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="380.0" y="34" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">False Sharing: 다른 변수인데 같은 캐시라인이면</text>
+<text x="380.0" y="56" font-size="13" fill="#59636e" text-anchor="middle" font-weight="400">Core 0은 a만, Core 1은 b만 쓰는데도 캐시라인 통째로 핑퐁합니다</text>
+<text x="40" y="92" font-size="14" fill="#cf222e" text-anchor="start" font-weight="700">① 나쁜 예: a, b가 같은 64바이트 안에 있음</text>
+<rect x="40" y="105" width="220" height="100" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+<rect class="fo0" x="40" y="105" width="220" height="100" rx="10" fill="#fff4e5" stroke="#f08c00" stroke-width="3"/>
+<text x="52" y="127" font-size="14" fill="#1f2328" text-anchor="start" font-weight="700">Core 0</text>
+<text x="248" y="127" font-size="12" fill="#0969da" text-anchor="end" font-weight="700">a만 씀</text>
+<rect x="55" y="150" width="190" height="34" rx="6" fill="none" stroke="#c4c9cf" stroke-dasharray="4 3"/>
+<rect x="500" y="105" width="220" height="100" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+<rect class="fo1" x="500" y="105" width="220" height="100" rx="10" fill="#fff4e5" stroke="#f08c00" stroke-width="3"/>
+<text x="512" y="127" font-size="14" fill="#1f2328" text-anchor="start" font-weight="700">Core 1</text>
+<text x="708" y="127" font-size="12" fill="#1a7f37" text-anchor="end" font-weight="700">b만 씀</text>
+<rect x="515" y="150" width="190" height="34" rx="6" fill="none" stroke="#c4c9cf" stroke-dasharray="4 3"/>
+<g class="fs"><rect x="55" y="150" width="190" height="34" rx="6" fill="#ffffff" stroke="#f08c00" stroke-width="2"/><rect x="59" y="154" width="40" height="26" rx="4" fill="#0969da"/><text x="79" y="172" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">a</text><rect x="103" y="154" width="40" height="26" rx="4" fill="#1a7f37"/><text x="123" y="172" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">b</text><text x="195" y="172" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">64B 캐시라인</text></g>
+<text class="fmv" x="380" y="112" font-size="14" fill="#0969da" text-anchor="middle" font-weight="700">RFO → Invalidate → 전달</text>
+<text class="fmv" x="380" y="132" font-size="12" fill="#59636e" text-anchor="middle" font-weight="">a, b가 함께 이동 (둘 다 대기)</text>
+<text class="fw0" x="380" y="122" font-size="14" fill="#0969da" text-anchor="middle" font-weight="700">Core 0이 a += 1</text>
+<text class="fw1" x="380" y="122" font-size="14" fill="#1a7f37" text-anchor="middle" font-weight="700">Core 1이 b += 1</text>
+<text x="40" y="250" font-size="14" fill="#1a7f37" text-anchor="start" font-weight="700">② 좋은 예: alignas(64)로 캐시라인 분리</text>
+<rect x="40" y="263" width="220" height="100" rx="10" fill="#f0fff4" stroke="#1a7f37" stroke-width="2"/>
+<text x="52" y="285" font-size="14" fill="#1f2328" text-anchor="start" font-weight="700">Core 0</text>
+<text x="248" y="285" font-size="12" fill="#1a7f37" text-anchor="end" font-weight="700">M 유지</text>
+<rect x="55" y="308" width="190" height="34" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="59" y="312" width="40" height="26" rx="4" fill="#0969da"/>
+<text x="79" y="330" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">a</text>
+<text x="172" y="330" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">나머지는 패딩</text>
+<rect x="500" y="263" width="220" height="100" rx="10" fill="#f0fff4" stroke="#1a7f37" stroke-width="2"/>
+<text x="512" y="285" font-size="14" fill="#1f2328" text-anchor="start" font-weight="700">Core 1</text>
+<text x="708" y="285" font-size="12" fill="#1a7f37" text-anchor="end" font-weight="700">M 유지</text>
+<rect x="515" y="308" width="190" height="34" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="2"/>
+<rect x="519" y="312" width="40" height="26" rx="4" fill="#1a7f37"/>
+<text x="539" y="330" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">b</text>
+<text x="632" y="330" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">나머지는 패딩</text>
+<text x="380" y="320" font-size="15" fill="#1a7f37" text-anchor="middle" font-weight="700">이동 없음</text>
+<text x="380" y="340" font-size="12" fill="#59636e" text-anchor="middle" font-weight="400">두 코어가 동시에 진행</text>
+<rect x="40" y="385" width="680" height="30" rx="6" fill="#f6f8fa"/>
+<text x="380" y="405" font-size="12" fill="#1f2328" text-anchor="middle" font-weight="400">struct alignas(64) Padded { std::atomic&lt;int&gt; v; };  // 변수마다 캐시라인 하나씩</text>
+</svg>
