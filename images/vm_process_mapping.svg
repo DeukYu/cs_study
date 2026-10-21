@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="600" viewBox="0 0 780 600" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR','Noto Sans KR',sans-serif">
+<style>
+
+</style>
+<rect x="0" y="0" width="780" height="600" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker><marker id="arB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker><marker id="arG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker><marker id="arR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker><marker id="arP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8250df"/></marker></defs>
+<text x="390.0" y="34" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">프로세스마다 자기만의 주소 공간, 실제 위치는 OS가 관리</text>
+<text x="390.0" y="56" font-size="13" fill="#59636e" text-anchor="middle" font-weight="400">A와 B는 같은 가상 주소를 쓰지만, 실제 물리 메모리 위치는 서로 다릅니다</text>
+<text x="115.0" y="100" font-size="14" fill="#0969da" text-anchor="middle" font-weight="700">프로세스 A (가상)</text>
+<text x="665.0" y="100" font-size="14" fill="#1a7f37" text-anchor="middle" font-weight="700">프로세스 B (가상)</text>
+<text x="390.0" y="88" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="700">물리 메모리 (RAM)</text>
+<rect x="315" y="100" width="150" height="40" rx="5" fill="#ddf4ff" stroke="#0969da"/>
+<text x="323" y="116" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 0</text>
+<text x="390.0" y="132" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700">A의 데이터</text>
+<rect x="315" y="146" width="150" height="40" rx="5" fill="#dafbe1" stroke="#1a7f37"/>
+<text x="323" y="162" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 1</text>
+<text x="390.0" y="178" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="700">B의 힙</text>
+<rect x="315" y="192" width="150" height="40" rx="5" fill="#fbefff" stroke="#8250df"/>
+<text x="323" y="208" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 2</text>
+<text x="390.0" y="224" font-size="12" fill="#8250df" text-anchor="middle" font-weight="700">A·B 공유 DLL</text>
+<rect x="315" y="238" width="150" height="40" rx="5" fill="#dafbe1" stroke="#1a7f37"/>
+<text x="323" y="254" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 3</text>
+<text x="390.0" y="270" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="700">B의 코드</text>
+<rect x="315" y="284" width="150" height="40" rx="5" fill="#dafbe1" stroke="#1a7f37"/>
+<text x="323" y="300" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 4</text>
+<text x="390.0" y="316" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="700">B의 스택</text>
+<rect x="315" y="330" width="150" height="40" rx="5" fill="#ddf4ff" stroke="#0969da"/>
+<text x="323" y="346" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 5</text>
+<text x="390.0" y="362" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700">A의 코드</text>
+<rect x="315" y="376" width="150" height="40" rx="5" fill="#ddf4ff" stroke="#0969da"/>
+<text x="323" y="392" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 6</text>
+<text x="390.0" y="408" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700">A의 스택</text>
+<rect x="315" y="422" width="150" height="40" rx="5" fill="#dafbe1" stroke="#1a7f37"/>
+<text x="323" y="438" font-size="10" fill="#59636e" text-anchor="start" font-weight="400">프레임 7</text>
+<text x="390.0" y="454" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="700">B의 데이터</text>
+<rect x="40" y="120" width="150" height="46" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="50" y="139" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x1000</text>
+<text x="180" y="139" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="115.0" y="157" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">코드</text>
+<path d="M190,143.0 C250,143.0 255,350.0 313,350.0" fill="none" stroke="#0969da" stroke-width="2" marker-end="url(#arB)"/>
+<rect x="40" y="174" width="150" height="46" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="50" y="193" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x2000</text>
+<text x="180" y="193" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="115.0" y="211" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">공유 DLL</text>
+<path d="M190,197.0 C250,197.0 255,212.0 313,212.0" fill="none" stroke="#8250df" stroke-width="2" marker-end="url(#arP)"/>
+<rect x="40" y="228" width="150" height="46" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="50" y="247" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x3000</text>
+<text x="180" y="247" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="115.0" y="265" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">데이터</text>
+<path d="M190,251.0 C250,251.0 255,120.0 313,120.0" fill="none" stroke="#0969da" stroke-width="2" marker-end="url(#arB)"/>
+<rect x="40" y="282" width="150" height="46" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="50" y="301" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x4000</text>
+<text x="180" y="301" font-size="11" fill="#cf222e" text-anchor="end" font-weight="700">i</text>
+<text x="115.0" y="319" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">힙</text>
+<path d="M190,305.0 C280,305.0 275,520 335,520" fill="none" stroke="#cf222e" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arR)"/>
+<rect x="40" y="336" width="150" height="46" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="50" y="355" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x5000</text>
+<text x="180" y="355" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="115.0" y="373" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">스택</text>
+<path d="M190,359.0 C250,359.0 255,396.0 313,396.0" fill="none" stroke="#0969da" stroke-width="2" marker-end="url(#arB)"/>
+<rect x="590" y="120" width="150" height="46" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="600" y="139" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x1000</text>
+<text x="730" y="139" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="665.0" y="157" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">코드</text>
+<path d="M590,143.0 C530,143.0 525,258.0 467,258.0" fill="none" stroke="#1a7f37" stroke-width="2" marker-end="url(#arG)"/>
+<rect x="590" y="174" width="150" height="46" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="600" y="193" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x2000</text>
+<text x="730" y="193" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="665.0" y="211" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">공유 DLL</text>
+<path d="M590,197.0 C530,197.0 525,212.0 467,212.0" fill="none" stroke="#8250df" stroke-width="2" marker-end="url(#arP)"/>
+<rect x="590" y="228" width="150" height="46" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="600" y="247" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x3000</text>
+<text x="730" y="247" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="665.0" y="265" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">데이터</text>
+<path d="M590,251.0 C530,251.0 525,442.0 467,442.0" fill="none" stroke="#1a7f37" stroke-width="2" marker-end="url(#arG)"/>
+<rect x="590" y="282" width="150" height="46" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="600" y="301" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x4000</text>
+<text x="730" y="301" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="665.0" y="319" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">힙</text>
+<path d="M590,305.0 C530,305.0 525,166.0 467,166.0" fill="none" stroke="#1a7f37" stroke-width="2" marker-end="url(#arG)"/>
+<rect x="590" y="336" width="150" height="46" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="600" y="355" font-size="11" fill="#59636e" text-anchor="start" font-weight="400">0x5000</text>
+<text x="730" y="355" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700">v</text>
+<text x="665.0" y="373" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="700">스택</text>
+<path d="M590,359.0 C530,359.0 525,304.0 467,304.0" fill="none" stroke="#1a7f37" stroke-width="2" marker-end="url(#arG)"/>
+<rect x="315" y="500" width="150" height="44" rx="8" fill="#ffebe9" stroke="#cf222e"/>
+<text x="390.0" y="519" font-size="12" fill="#cf222e" text-anchor="middle" font-weight="700">디스크 (페이지 파일)</text>
+<text x="390.0" y="535" font-size="11" fill="#59636e" text-anchor="middle" font-weight="400">A의 힙: 아직 안 올라옴</text>
+<text x="40" y="420" font-size="12" fill="#1a7f37" text-anchor="start" font-weight="700">v = RAM에 있음</text>
+<text x="40" y="440" font-size="12" fill="#cf222e" text-anchor="start" font-weight="700">i = RAM에 없음 → 접근 시 페이지 폴트</text>
+<text x="590" y="420" font-size="12" fill="#1f2328" text-anchor="start" font-weight="700">같은 0x1000이어도</text>
+<text x="590" y="440" font-size="12" fill="#1f2328" text-anchor="start" font-weight="400">A는 프레임 5, B는 프레임 3</text>
+<text x="390.0" y="580" font-size="12" fill="#59636e" text-anchor="middle" font-weight="400">보라색: DLL처럼 읽기 전용인 페이지는 여러 프로세스가 같은 프레임을 공유해서 메모리를 아낍니다</text>
+</svg>
