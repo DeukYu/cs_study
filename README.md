@@ -22,6 +22,7 @@
     - [MESI_프로토콜](https://github.com/DeukYu/cs_study/blob/main/Operating%20System/MESI_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C.md)
     - [가상_메모리](https://github.com/DeukYu/cs_study/blob/main/Operating%20System/%EA%B0%80%EC%83%81_%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
     - [멀티스레드_메모리_할당](https://github.com/DeukYu/cs_study/blob/main/Operating%20System/%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C_%EB%A9%94%EB%AA%A8%EB%A6%AC_%ED%95%A0%EB%8B%B9.md)
+    - [멀티스레드를_쓰는_이유](https://github.com/DeukYu/cs_study/blob/main/Operating%20System/%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C%EB%A5%BC_%EC%93%B0%EB%8A%94_%EC%9D%B4%EC%9C%A0.md)
     - [메모리_얼라인먼트](https://github.com/DeukYu/cs_study/blob/main/Operating%20System/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%96%BC%EB%9D%BC%EC%9D%B8%EB%A8%BC%ED%8A%B8.md)
 
 - ### Data Structure
