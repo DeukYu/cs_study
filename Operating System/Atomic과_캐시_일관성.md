@@ -58,7 +58,7 @@
 |용어|쉬운 설명|
 |---|---|
 |캐시 일관성 (Cache Coherence)|코어마다 캐시가 따로 있어도 **모두 같은 값을 보게** 맞춰주는 장치|
-|MESI|캐시라인마다 붙는 상태표 4가지 (아래 표). 일관성을 지키는 규칙|
+|MESI|캐시라인마다 붙는 상태표 4가지 (아래 표). 일관성을 지키는 규칙 → 자세히: [MESI_프로토콜](./MESI_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C.md)|
 |Invalidate (무효화)|"네가 가진 복사본은 이제 옛날 거니까 버려"|
 |RFO (Read For Ownership)|"그 캐시라인 나한테 넘겨줘, 내가 고칠 거야" 요청|
 |Snoop (스누프)|다른 코어들이 RFO 같은 요청을 엿듣고 반응하는 것|
@@ -229,4 +229,4 @@ int64_t Total() {                       // 총합이 필요할 때만 모아서 
 - **Windows**: Intel VTune의 Memory Access 분석
 - **간단 실험**: 스레드 수를 1, 2, 4, 8, 16, 32로 바꿔가며 1초 동안 총 증가 횟수를 찍어보면 Step 6 그래프가 재현됩니다.
 
-- 관련 문서: [메모리_얼라인먼트](./%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%96%BC%EB%9D%BC%EC%9D%B8%EB%A8%BC%ED%8A%B8.md), [멀티스레드_메모리_할당](./%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C_%EB%A9%94%EB%AA%A8%EB%A6%AC_%ED%95%A0%EB%8B%B9.md), [Context_Switching](./Context_Switching.md)
+- 관련 문서: [MESI_프로토콜](./MESI_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C.md), [메모리_얼라인먼트](./%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%96%BC%EB%9D%BC%EC%9D%B8%EB%A8%BC%ED%8A%B8.md), [멀티스레드_메모리_할당](./%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C_%EB%A9%94%EB%AA%A8%EB%A6%AC_%ED%95%A0%EB%8B%B9.md), [Context_Switching](./Context_Switching.md)
